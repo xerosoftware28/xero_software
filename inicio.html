@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XERO - Inicio</title>
+    
+    <!-- LÍNEA QUE CARGA LOS ICONOS DE FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- BARRA LATERAL ROJA -->
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <!-- LOGO XERO -->
+            <div class="sidebar-logo">
+                <img src="../img/logo-xero.png" alt="Logo">
+                <span class="logo-text">XERO</span>
+            </div>
+            
+            <!-- NAVEGACIÓN -->
+            <nav class="menu">
+                <a href="inicio.html" class="menu-item active">
+                    <span></span> Inicio
+                </a>
+                <a href="productos.html" class="menu-item">
+                    <span></span> Productos
+                </a>
+                <a href="categorias.html" class="menu-item">
+                    <span></span> Categorías
+                </a>
+                <a href="tiendas.html" class="menu-item">
+                    <span></span> Tiendas
+                </a>
+                <a href="configuracion.html" class="menu-item">
+                    <span> </span> Ajustes
+                </a>
+            </nav>
+        </div>
+
+        <!-- ACCIONES INFERIORES -->
+        <div class="sidebar-footer">
+            <a href="agregar-producto.html" class="btn-add">+ Añadir producto</a>
+            <a href="index.html" class="btn-logout">
+                <span>↪</span> Cerrar Sesión
+            </a>
+        </div>
+    </aside>
+
+    <!-- PANEL DERECHO CON BARRA SUPERIOR -->
+    <main class="main-content">
+        <!-- BARRA SUPERIOR (BUSCADOR Y USUARIO) -->
+        <header class="topbar">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            
+            <div class="topbar-user">
+                <!-- CALCULADORA / BASE DE DATOS -->
+                <i class="fa-solid fa-calculator icon"></i>
+                
+                <!-- RECARGAR / HISTORIAL -->
+                <i class="fa-solid fa-rotate-left icon"></i>
+                
+                <!-- NOTIFICACIÓN / CAMPANA -->
+                <i class="fa-solid fa-bell icon"></i>
+                
+                <!-- MENSAJE CON 3 PUNTOS ADENTRO -->
+                <i class="fa-solid fa-comment-dots icon"></i>
+                
+                <!-- FOTO DE PERFIL -->
+                <img src="../img/avatar.png" alt="Usuario" class="user-avatar">
+            </div>
+        </header>
+
+                  <!-- AQUÍ SE CONSTRUIRÁ EL CONTENIDO DEL DASHBOARD -->
+        <!-- TÍTULO PRINCIPAL -->
+<h2 class="section-title">Actividad reciente</h2>
+
+<!-- FILA 1: VENTAS Y CATEGORÍAS -->
+<div class="dashboard-grid">
+    <!-- Tarjeta Ventas -->
+    <div class="card">
+        <h3>Ventas</h3>
+        <div class="chart-placeholder">
+            <div class="bar bar-1"><span>Confirmado</span></div>
+            <div class="bar bar-2"><span>Empaquetado</span></div>
+            <div class="bar bar-3"><span>Reembolsado</span></div>
+            <div class="bar bar-4"><span>Enviado</span></div>
+        </div>
+    </div>
+
+    <!-- Tarjeta Categorías -->
+    <div class="card">
+        <div class="card-header">
+            <h3>Categorías de artículos</h3>
+            <a href="#" class="see-more">VER MÁS</a>
+        </div>
+        <div class="category-grid">
+            <img src="../img/prod1.jpg" alt="Producto">
+            <img src="../img/prod2.jpg" alt="Producto">
+            <img src="../img/prod3.jpg" alt="Producto">
+            <img src="../img/prod4.jpg" alt="Producto">
+            <img src="../img/prod5.jpg" alt="Producto">
+            <img src="../img/prod6.jpg" alt="Producto">
+            <img src="../img/prod7.jpg" alt="Producto">
+            <img src="../img/prod8.jpg" alt="Producto">
+            <img src="../img/prod9.jpg" alt="Producto">
+            <img src="../img/prod10.jpg" alt="Producto">
+        </div>
+    </div>
+</div>
+
+<!-- FILA 2: INVENTARIO Y LISTA DE TIENDAS -->
+<div class="dashboard-grid mt-20">
+    <!-- Tarjeta Inventario -->
+    <div class="card card-small">
+        <h3>Número de inventario</h3>
+        <ul class="inventory-list">
+            <li class="danger">Artículos con stock bajo <span>12 ●</span></li>
+            <li>Categorías de artículos <span>6</span></li>
+            <li>Artículos reembolsados <span>1</span></li>
+        </ul>
+    </div>
+
+    <!-- Tarjeta Tiendas -->
+    <div class="card card-large">
+        <div class="card-header">
+            <h3>Lista de tiendas</h3>
+            <a href="#" class="see-more">VER MÁS</a>
+        </div>
+        <table class="stores-table">
+            <tr>
+                <td>Macedonia, UK</td>
+                <td>28 registrados</td>
+                <td>108 ítems</td>
+                <td>2 órdenes</td>
+            </tr>
+            <tr>
+                <td>Yorkshire, UK</td>
+                <td>11 registrados</td>
+                <td>241 ítems</td>
+                <td>15 órdenes</td>
+            </tr>
+            <tr>
+                <td>Hull, UK</td>
+                <td>5 registrados</td>
+                <td>41 ítems</td>
+                <td>11 órdenes</td>
+            </tr>
+            <tr>
+                <td>Leicester, UK</td>
+                <td>18 registrados</td>
+                <td>281 ítems</td>
+                <td>8 órdenes</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- FILA 3: SOLICITUDES (TARJETAS INFERIORES) -->
+<h3 class="section-subtitle mt-20">Solicitudes</h3>
+<div class="stats-grid">
+    <div class="stat-card red">
+        <h2>12</h2>
+        <p>REEMBOLSOS</p>
+    </div>
+    <div class="stat-card dark">
+        <h2>67</h2>
+        <p>NUEVOS ARTÍCULOS</p>
+    </div>
+    <div class="stat-card blue">
+        <h2>190</h2>
+        <p>NUEVOS PEDIDOS</p>
+    </div>
+    <div class="stat-card dark">
+        <h2>11</h2>
+        <p>ARTÍCULOS PERDIDOS</p>
+    </div>
+</div>
+    </main>
+
+</body>
+</html>

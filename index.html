@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - XERO</title>
+    <!-- Subimos un nivel con "../" para encontrar la carpeta css -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="auth-page">
+
+    <div class="auth-card">
+        <div class="auth-header">
+            <h1>XERO</h1>
+            <p>Ingresa a tu cuenta de administración</p>
+        </div>
+
+        <form action="index.html" class="auth-form">
+            <div class="form-group">
+                <label>Correo electrónico</label>
+                <input type="email" placeholder="ejemplo@correo.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Contraseña</label>
+                <input type="password" placeholder="Tu contraseña" required>
+            </div>
+
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox"> Recordarme
+                </label>
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <button type="submit" class="btn-auth">Iniciar Sesión</button>
+        </form>
+
+        <div class="auth-footer">
+            <!-- Apunta al archivo registro.html que está en la misma carpeta -->
+            <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

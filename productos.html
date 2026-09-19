@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XERO - Productos</title>
+    
+    <!-- LÍNEA PARA LOS ICONOS DE FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- BARRA LATERAL ROJA -->
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <div class="sidebar-logo">
+                <img src="../img/logo-xero.png" alt="Logo">
+                <span class="logo-text">XERO</span>
+            </div>
+            
+            <nav class="menu">
+                <a href="inicio.html" class="menu-item">
+                    <span></span> Inicio
+                </a>
+                <!-- ACTIVAMOS EL BOTÓN DE PRODUCTOS -->
+                <a href="productos.html" class="menu-item active">
+                    <span></span> Productos
+                </a>
+                <a href="categorias.html" class="menu-item">
+                    <span></span> Categorías
+                </a>
+                <a href="tiendas.html" class="menu-item">
+                    <span> </span> Tiendas
+                </a>
+                <a href="configuracion.html" class="menu-item">
+                    <span></span> Ajustes
+                </a>
+            </nav>
+        </div>
+
+        <div class="sidebar-footer">
+            <a href="agregar-producto.html" class="btn-add">+ Añadir producto</a>
+            <a href="index.html" class="btn-logout">
+                <span>↪</span> Cerrar Sesión
+            </a>
+        </div>
+    </aside>
+
+    <!-- PANEL DERECHO -->
+    <main class="main-content">
+        <!-- BARRA SUPERIOR (HEADER) -->
+        <header class="topbar">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar producto...">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            
+            <div class="topbar-user">
+                <i class="fa-solid fa-calculator icon"></i>
+                <i class="fa-solid fa-rotate-left icon"></i>
+                <i class="fa-solid fa-bell icon"></i>
+                <i class="fa-solid fa-comment-dots icon"></i>
+                <img src="../img/avatar.png" alt="Usuario" class="user-avatar">
+            </div>
+        </header>
+
+        <!-- ENCABEZADO DE LA SECCIÓN DE PRODUCTOS -->
+        <div class="page-header">
+            <h2>Inventario de Productos</h2>
+            <a href="agregar-producto.html" class="btn-main-action">+ Nuevo Producto</a>
+        </div>
+
+        <!-- TABLA DE PRODUCTOS -->
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../img/prod1.jpg" alt="Producto" class="table-img"></td>
+                        <td><strong>Sudadera Blanca</strong></td>
+                        <td>Ropa</td>
+                        <td>$25.00</td>
+                        <td>18 u.</td>
+                        <td><span class="status-badge active">Disponible</span></td>
+                        <td>
+                            <button class="btn-icon"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="btn-icon danger"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../img/prod2.jpg" alt="Producto" class="table-img"></td>
+                        <td><strong>Camiseta Casual</strong></td>
+                        <td>Ropa</td>
+                        <td>$15.00</td>
+                        <td>4 u.</td>
+                        <td><span class="status-badge low">Stock Bajo</span></td>
+                        <td>
+                            <button class="btn-icon"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="btn-icon danger"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+</body>
+</html>

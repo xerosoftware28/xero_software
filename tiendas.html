@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XERO - Tiendas</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <div class="sidebar-logo">
+                <img src="../img/logo-xero.png" alt="Logo">
+                <span class="logo-text">XERO</span>
+            </div>
+            
+            <!-- MENÚ SIN ICONOS NI EMOJIS -->
+            <nav class="menu">
+                <a href="inicio.html" class="menu-item">Inicio</a>
+                <a href="productos.html" class="menu-item">Productos</a>
+                <a href="categorias.html" class="menu-item">Categorías</a>
+                <a href="tiendas.html" class="menu-item active">Tiendas</a>
+                <a href="configuracion.html" class="menu-item">Ajustes</a>
+            </nav>
+        </div>
+
+        <div class="sidebar-footer">
+            <a href="agregar-producto.html" class="btn-add">+ Añadir producto</a>
+            <a href="index.html" class="btn-logout">Cerrar Sesión</a>
+        </div>
+    </aside>
+
+    <!-- PANEL DERECHO -->
+    <main class="main-content">
+        <!-- BARRA SUPERIOR -->
+        <header class="topbar">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar tienda...">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            
+            <div class="topbar-user">
+                <i class="fa-solid fa-calculator icon"></i>
+                <i class="fa-solid fa-rotate-left icon"></i>
+                <i class="fa-solid fa-bell icon"></i>
+                <i class="fa-solid fa-comment-dots icon"></i>
+                <img src="../img/avatar.png" alt="Usuario" class="user-avatar">
+            </div>
+        </header>
+
+        <div class="page-header">
+            <h2>Ubicaciones y Tiendas</h2>
+        </div>
+
+        <!-- GRID DE TIENDAS -->
+        <div class="stores-grid">
+            <div class="store-card">
+                <div class="store-header">
+                    <i class="fa-solid fa-location-dot store-icon"></i>
+                    <div>
+                        <h3>Macedonia, UK</h3>
+                        <span class="store-status open">Abierta</span>
+                    </div>
+                </div>
+                <ul class="store-info">
+                    <li><i class="fa-solid fa-boxes-stacked"></i> 108 ítems en inventario</li>
+                    <li><i class="fa-solid fa-clipboard-check"></i> 28 registrados</li>
+                    <li><i class="fa-solid fa-cart-shopping"></i> 2 órdenes pendientes</li>
+                </ul>
+            </div>
+
+            <div class="store-card">
+                <div class="store-header">
+                    <i class="fa-solid fa-location-dot store-icon"></i>
+                    <div>
+                        <h3>Yorkshire, UK</h3>
+                        <span class="store-status open">Abierta</span>
+                    </div>
+                </div>
+                <ul class="store-info">
+                    <li><i class="fa-solid fa-boxes-stacked"></i> 241 ítems en inventario</li>
+                    <li><i class="fa-solid fa-clipboard-check"></i> 11 registrados</li>
+                    <li><i class="fa-solid fa-cart-shopping"></i> 15 órdenes pendientes</li>
+                </ul>
+            </div>
+
+            <div class="store-card">
+                <div class="store-header">
+                    <i class="fa-solid fa-location-dot store-icon"></i>
+                    <div>
+                        <h3>Hull, UK</h3>
+                        <span class="store-status open">Abierta</span>
+                    </div>
+                </div>
+                <ul class="store-info">
+                    <li><i class="fa-solid fa-boxes-stacked"></i> 41 ítems en inventario</li>
+                    <li><i class="fa-solid fa-clipboard-check"></i> 5 registrados</li>
+                    <li><i class="fa-solid fa-cart-shopping"></i> 11 órdenes pendientes</li>
+                </ul>
+            </div>
+
+            <div class="store-card">
+                <div class="store-header">
+                    <i class="fa-solid fa-location-dot store-icon"></i>
+                    <div>
+                        <h3>Leicester, UK</h3>
+                        <span class="store-status open">Abierta</span>
+                    </div>
+                </div>
+                <ul class="store-info">
+                    <li><i class="fa-solid fa-boxes-stacked"></i> 281 ítems en inventario</li>
+                    <li><i class="fa-solid fa-clipboard-check"></i> 18 registrados</li>
+                    <li><i class="fa-solid fa-cart-shopping"></i> 8 órdenes pendientes</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

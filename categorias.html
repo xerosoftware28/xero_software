@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XERO - Categorías</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <div class="sidebar-logo">
+                <img src="../img/logo-xero.png" alt="Logo">
+                <span class="logo-text">XERO</span>
+            </div>
+            
+            <!-- MENÚ SIN ICONOS NI EMOJIS -->
+            <nav class="menu">
+                <a href="inicio.html" class="menu-item">Inicio</a>
+                <a href="productos.html" class="menu-item">Productos</a>
+                <a href="categorias.html" class="menu-item active">Categorías</a>
+                <a href="tiendas.html" class="menu-item">Tiendas</a>
+                <a href="configuracion.html" class="menu-item">Ajustes</a>
+            </nav>
+        </div>
+
+        <div class="sidebar-footer">
+            <a href="agregar-producto.html" class="btn-add">+ Añadir producto</a>
+            <a href="index.html" class="btn-logout">Cerrar Sesión</a>
+        </div>
+    </aside>
+
+    <!-- PANEL DERECHO -->
+    <main class="main-content">
+        <!-- BARRA SUPERIOR -->
+        <header class="topbar">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar categoría...">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            
+            <div class="topbar-user">
+                <i class="fa-solid fa-calculator icon"></i>
+                <i class="fa-solid fa-rotate-left icon"></i>
+                <i class="fa-solid fa-bell icon"></i>
+                <i class="fa-solid fa-comment-dots icon"></i>
+                <img src="../img/avatar.png" alt="Usuario" class="user-avatar">
+            </div>
+        </header>
+
+        <div class="page-header">
+            <h2>Categorías de Productos</h2>
+        </div>
+
+        <!-- GRID DE CATEGORÍAS -->
+        <div class="categories-grid">
+            <div class="category-card">
+                <img src="../img/prod1.jpg" alt="T-shirts" class="category-img">
+                <div class="category-info">
+                    <h3>Camisetas / T-shirts</h3>
+                    <p>124 Productos disponibles</p>
+                    <a href="productos.html" class="btn-category-view">Ver artículos</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="../img/prod2.jpg" alt="Hoodies" class="category-img">
+                <div class="category-info">
+                    <h3>Sudaderas / Hoodies</h3>
+                    <p>85 Productos disponibles</p>
+                    <a href="productos.html" class="btn-category-view">Ver artículos</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="../img/prod3.jpg" alt="Pants" class="category-img">
+                <div class="category-info">
+                    <h3>Pantalones & Jeans</h3>
+                    <p>62 Productos disponibles</p>
+                    <a href="productos.html" class="btn-category-view">Ver artículos</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="../img/prod4.jpg" alt="Accesorios" class="category-img">
+                <div class="category-info">
+                    <h3>Accesorios</h3>
+                    <p>41 Productos disponibles</p>
+                    <a href="productos.html" class="btn-category-view">Ver artículos</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XERO - Añadir Producto</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <div class="sidebar-logo">
+                <img src="../img/logo-xero.png" alt="Logo">
+                <span class="logo-text">XERO</span>
+            </div>
+            
+            <nav class="menu">
+                <a href="inicio.html" class="menu-item"><span></span> Inicio</a>
+                <a href="productos.html" class="menu-item active"><span></span> Productos</a>
+                <a href="categorias.html" class="menu-item"><span></span> Categorías</a>
+                <a href="tiendas.html" class="menu-item"><span></span> Tiendas</a>
+                <a href="configuracion.html" class="menu-item"><span></span> Ajustes</a>
+            </nav>
+        </div>
+
+        <div class="sidebar-footer">
+            <a href="agregar-producto.html" class="btn-add">+ Añadir producto</a>
+            <a href="index.html" class="btn-logout"><span>↪</span> Cerrar Sesión</a>
+        </div>
+    </aside>
+
+    <!-- PANEL DERECHO -->
+    <main class="main-content">
+        <!-- BARRA SUPERIOR -->
+        <header class="topbar">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            <div class="topbar-user">
+                <i class="fa-solid fa-calculator icon"></i>
+                <i class="fa-solid fa-rotate-left icon"></i>
+                <i class="fa-solid fa-bell icon"></i>
+                <i class="fa-solid fa-comment-dots icon"></i>
+                <img src="../img/avatar.png" alt="Usuario" class="user-avatar">
+            </div>
+        </header>
+
+        <!-- FORMULARIO DE REGISTRO -->
+        <div class="form-card">
+            <h2>Añadir Nuevo Producto</h2>
+            <form action="productos.html">
+                <div class="form-group">
+                    <label>Nombre del Producto</label>
+                    <input type="text" placeholder="Ej. Unisex T-shirt Blanca" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Categoría</label>
+                        <select required>
+                            <option value="">Seleccionar...</option>
+                            <option value="tshirts">T-shirts</option>
+                            <option value="hoodies">Sudadera</option>
+                            <option value="pants">Pantalones</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Marca</label>
+                        <input type="text" placeholder="Ej. Xero">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Precio ($)</label>
+                        <input type="number" step="0.01" placeholder="0.00" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Stock Inicial</label>
+                        <input type="number" placeholder="0" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Imagen del Producto</label>
+                    <input type="file" accept="image/*">
+                </div>
+
+                <div class="form-buttons">
+                    <a href="productos.html" class="btn-cancel">Cancelar</a>
+                    <button type="submit" class="btn-save">Guardar Producto</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

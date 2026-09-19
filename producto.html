@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XERO - Detalle de Producto</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <div class="sidebar-logo">
+                <img src="../img/logo-xero.png" alt="Logo">
+                <span class="logo-text">XERO</span>
+            </div>
+            
+            <nav class="menu">
+                <a href="inicio.html" class="menu-item">Inicio</a>
+                <a href="productos.html" class="menu-item active">Productos</a>
+                <a href="categorias.html" class="menu-item">Categorías</a>
+                <a href="tiendas.html" class="menu-item">Tiendas</a>
+                <a href="configuracion.html" class="menu-item">Ajustes</a>
+            </nav>
+        </div>
+
+        <div class="sidebar-footer">
+            <a href="agregar-producto.html" class="btn-add">+ Añadir producto</a>
+            <a href="index.html" class="btn-logout">Cerrar Sesión</a>
+        </div>
+    </aside>
+
+    <!-- PANEL DERECHO -->
+    <main class="main-content">
+        <!-- BARRA SUPERIOR -->
+        <header class="topbar">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            
+            <div class="topbar-user">
+                <i class="fa-solid fa-calculator icon"></i>
+                <i class="fa-solid fa-rotate-left icon"></i>
+                <i class="fa-solid fa-bell icon"></i>
+                <i class="fa-solid fa-comment-dots icon"></i>
+                <img src="../img/avatar.png" alt="Usuario" class="user-avatar">
+            </div>
+        </header>
+
+        <div class="page-header">
+            <h2>Detalle del Producto</h2>
+            <a href="productos.html" class="btn-back">Volver a lista</a>
+        </div>
+
+        <!-- TARJETA DE DETALLE DEL PRODUCTO -->
+        <div class="product-detail-card">
+            <div class="product-gallery">
+                <img src="../img/prod1.jpg" alt="Producto Principal" class="main-image">
+                <div class="product-thumbnails">
+                    <img src="../img/prod1.jpg" alt="Vista 1" class="active">
+                    <img src="../img/prod2.jpg" alt="Vista 2">
+                    <img src="../img/prod3.jpg" alt="Vista 3">
+                </div>
+            </div>
+
+            <div class="product-info-detail">
+                <span class="product-category">Camisetas / T-shirts</span>
+                <h1 class="product-title">Unisex T-shirt Blanca</h1>
+                <p class="product-sku">SKU: XR-90214</p>
+                
+                <div class="product-price-stock">
+                    <span class="price">$25.00</span>
+                    <span class="stock-badge in-stock">En Stock (24 unidades)</span>
+                </div>
+
+                <p class="product-description">
+                    Camiseta básica de corte unisex confeccionada en algodón 100% orgánico. Diseñada para un ajuste cómodo y duradero en el uso diario.
+                </p>
+
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <strong>Marca:</strong> XERO Original
+                    </div>
+                    <div class="meta-item">
+                        <strong>Tienda principal:</strong> Macedonia, UK
+                    </div>
+                </div>
+
+                <div class="product-actions">
+                    <a href="agregar-producto.html" class="btn-edit">Editar Producto</a>
+                    <button class="btn-delete">Borrar Producto</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
